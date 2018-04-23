@@ -1,5 +1,12 @@
 package ie.StoreCompare.storage;
 
+/**
+ * Object that hold all variables for the store threads
+ * 
+ * @author Cian Gannon
+ * @author Danielis Joniškis
+ * @author Eddie Eldridge
+ */
 public class Items {
 
 	private String name;

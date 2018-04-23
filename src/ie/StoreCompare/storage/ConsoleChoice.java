@@ -1,5 +1,13 @@
 package ie.StoreCompare.storage;
 
+/**
+ * Unimplemented console option for CEX store
+ * 
+ * 
+ * @author Cian Gannon
+ * @author Danielis Joniškis
+ * @author Eddie Eldridge
+ */
 public class ConsoleChoice {
 
 	public enum Sony {
