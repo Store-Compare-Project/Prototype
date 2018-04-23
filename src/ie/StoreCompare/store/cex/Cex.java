@@ -19,6 +19,18 @@ import org.jsoup.select.Elements;
  */
 public class Cex {
 
+	/**
+	 * Method is passed gameName, object list and itemList from the main menu
+	 * 
+	 * @param gameName
+	 *            Name of the game to be added to the url so the HTML can be
+	 *            taken from the custom result
+	 * @param itemList
+	 *            List of the object Items. This object hold all data from each
+	 *            thread and website
+	 * @throws IOException
+	 *             Throws input output errors
+	 */
 	public static void main(String gameName, List<Items> itemList) throws IOException {
 
 		// Variables used
