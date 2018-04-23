@@ -1,15 +1,29 @@
 package ie.StoreCompare.core;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-
+// Imports used
 import ie.StoreCompare.storage.Items;
 import ie.StoreCompare.store.cex.Cex;
 import ie.StoreCompare.store.gamestop.Gamestop;
 import ie.StoreCompare.store.musicmagpie.MusicMagPieEbayStore;
 
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+/**
+ * This is a console menu interface which allows the user to interact with the 3 websites
+ * 
+ * MusicMagPie - This is an ebay store which sells used items (Mostly games and movies).
+ * CEX - A used electronics store which sells.
+ * Gamestop - A video game retailer which sells new and used games.
+ * 
+ * Using these three game stores we can compare the price of similar items to find the best deal.
+ * 
+ * @author Cian Gannon
+ * @author Danielis Joniškis
+ * @author Eddie Eldridge
+ */
 public class Menu {
 
 	public static void main(String[] args) throws InterruptedException {
@@ -104,7 +118,6 @@ class CexThread extends Thread {
 		try {
 			Cex.main(gameName, itemList);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -124,7 +137,6 @@ class MusicMagPieThread extends Thread {
 		try {
 			MusicMagPieEbayStore.main(gameName, itemList);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -143,7 +155,6 @@ class GamestopThread extends Thread {
 		try {
 			Gamestop.main(gameName, itemList);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
