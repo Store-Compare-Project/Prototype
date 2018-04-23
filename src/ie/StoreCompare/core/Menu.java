@@ -16,8 +16,9 @@ import java.util.Scanner;
  * websites
  * 
  * MusicMagPie - This is an ebay store which sells used items (Mostly games and
- * movies). CEX - A used electronics store which sells. Gamestop - A video game
- * retailer which sells new and used games.
+ * movies).<br> CEX - A used electronics store which sells.<br>
+ * Gamestop - A video game
+ * retailer which sells new and used games.<br>
  * 
  * Using these three game stores we can compare the price of similar items to
  * find the best deal.
@@ -31,7 +32,9 @@ public class Menu {
 	/**
 	 * 
 	 * @param args
+	 *            Default method argument
 	 * @throws InterruptedException
+	 *             Stops thread error
 	 */
 	public static void main(String[] args) throws InterruptedException {
 
@@ -75,17 +78,17 @@ public class Menu {
 					// Thread setup
 					MusicMagPieThread = new MusicMagPieThread(gameName, itemList);
 					MusicMagPieThread.start();
-					
+
 					// Exit menu code
 					menu = 0;
-					
+
 					// Wait until the thread has stopped
 					MusicMagPieThread.join();
 				} else if (menu == 2) {
 					// Thread setup
 					CexThread = new CexThread(gameName, itemList);
 					CexThread.start();
-					
+
 					// Exit menu code
 					menu = 0;
 
@@ -95,7 +98,7 @@ public class Menu {
 					// Thread setup
 					GamestopThread = new GamestopThread(gameName, itemList);
 					GamestopThread.start();
-					
+
 					// Exit menu code
 					menu = 0;
 
@@ -107,7 +110,7 @@ public class Menu {
 					CexThread = new CexThread(gameName, itemList);
 					MusicMagPieThread.start();
 					CexThread.start();
-					
+
 					// Exit menu code
 					menu = 0;
 

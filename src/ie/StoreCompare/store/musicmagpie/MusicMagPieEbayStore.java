@@ -42,7 +42,7 @@ public class MusicMagPieEbayStore {
 		// Replace all spaces in gameName with '+'
 		gameName = gameName.replaceAll(" ", "+");
 
-		// new url equals itself plus the the game name with '+' between words
+		// New url equals itself plus the the game name with '+' between words
 		// and then the store ID at the end
 		url = url + gameName + "&_ssn=musicmagpie";
 
